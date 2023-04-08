@@ -1,29 +1,52 @@
-void setup(){ 
-size(400, 400); 
- }
-void draw (){
-background(148, 199, 252); 
-fill(104, 188, 103);
-noStroke();
-rect(0, 300, 400, 400);
-fill(188, 101, 102);
-rect(150, 300, 50, 50);
-fill( 162, 85, 87);
-rect(140, 300, 70, 20);
-stroke(1);
-fill(41, 118, 20);
-line(175, 300, 175, 250);
-noStroke();
-fill(255);
-ellipse(175,240, 70, 20);
-ellipse(175,240, 20, 70);
-fill(231, 232, 28);
-circle(175, 240, 20);
-fill(244, 245, 42);
-circle(310, 80, 71);
-fill(255);
-circle( 50, 75, 40);
-circle(73, 60, 40);
-circle(73, 85, 40);
-circle(95, 75, 40);
-}
+PImage Hidetaka;
+int a;
+int ojoizx;
+int ojosy;
+int ojodex;
+int b;
+void setup() {
+  size(800, 400);
+  a=200;
+  b=100;
+  ojoizx= 125;
+  ojosy=185;
+  ojodex=245;
+
+  Hidetaka = loadImage("asd.jpg");
+};
+
+void draw() {
+  background(100);
+  image(Hidetaka, 400, 0, 400, 400);
+  strokeWeight(2);
+  fill(0);
+  noStroke();
+  ellipse(a, 60, a, b);
+  ellipse(b, 150, b, a);
+  ellipse(300, 150, b, a);
+  stroke(1);
+  fill(219, 122, 84);
+  ellipse(a, a, 300, 350);
+  fill(0);
+  ellipse(a, 30, 70, 40);
+  strokeWeight(5);
+  line(50, 168, 75, 168);
+  line(350, 168, 290, 168);
+  fill(219, 122, 84);
+  rect(75, 160, b, 50, 7);
+  line(175, 168, 195, 168);
+  rect(195, 160, b, 50, 7);
+  strokeWeight(2);
+  fill(255);
+  ellipse(ojoizx, ojosy, 60, 25);
+  ellipse(ojodex, ojosy, 60, 25);
+  fill(0);
+  ellipse(ojoizx, ojosy, 25, 25);
+  ellipse(ojodex, ojosy, 25, 25);
+  fill(198,93,54);
+  noStroke();
+ellipse(185,290,70,10);
+ellipse(175,287,20,10);
+ellipse(195,287,20,10);
+  println(mouseX, mouseY);
+};
