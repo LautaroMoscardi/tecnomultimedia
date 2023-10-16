@@ -89,7 +89,7 @@ function colision() {
     if ( estadoLadrillos[i] ) {
       let xL = i*60+(width-60*cantL)/2;
       let yL = 100;
-      if ( pelotax-15/2 < pelotax+60 && pelotax+15/2 > xL
+      if ( pelotax-15/2 < xL+60 && pelotax+15/2 > xL
         && pelotay-15/2 < yL+20 && pelotay+15/2 > yL ) {
         estadoLadrillos[i] = false;
         vely=4;
